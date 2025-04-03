@@ -1,1 +1,19 @@
-# skip-hire-app
+# Skip Hire App
+
+This project is a Skip Hire selection application where users can choose different skip sizes based on their needs.
+
+## Features
+- Dark mode toggle
+- Select a skip size
+- Highlight selected skip
+- Responsive UI
+
+## Technologies Used
+- React
+- Bootstrap
+- Axios (for API calls)
+
+## How to Run Locally
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/Ankit-Rajpara/skip-hire-app.git

@@ -1,0 +1,213 @@
+/* General Container */
+.container {
+  max-width: 1100px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Loader */
+.loader-spinner {
+  align-items: center;
+  height: 70vh;
+}
+
+.spinner-border {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: all 0.4s ease;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Skip Card */
+.skip-card {
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skip-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Selected Card */
+.selected {
+  border: 2px solid #007bff;
+  box-shadow: 0px 6px 14px rgba(0, 123, 255, 0.3);
+  background-color: rgba(0, 123, 255, 0.05); /* Light blue tint */
+}
+
+/* Dark Mode for Cards */
+.dark-mode .skip-card {
+  background: #333;
+  border: 1px solid #555;
+}
+
+.dark-mode .selected {
+  border-color: #007bff;
+  box-shadow: 0px 6px 14px rgba(0, 123, 255, 0.4);
+}
+
+/* Image & Badges */
+.skip-image-container {
+  position: relative;
+}
+
+.size-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Pricing Section */
+.price-section {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.per-week {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dark Mode Pricing */
+.dark-mode .price,
+.dark-mode .card-title {
+  color: #fff !important;
+}
+
+.dark-mode .text-muted {
+    color: #bbb !important; /* Softer gray instead of pure white */
+}
+
+.dark-mode .per-week {
+  color: #aaa;
+}
+
+/* Buttons */
+.btn-dark,
+.btn-primary {
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background: #222;
+}
+
+.btn-dark:hover {
+  background: #333;
+}
+
+.btn-primary {
+  background: #007bff;
+}
+
+.dark-mode .btn-dark {
+  background: #444;
+}
+
+.dark-mode .btn-dark:hover {
+  background: #555;
+}
+
+.skeleton {
+    background: #eee;
+    border-radius: 8px;
+    height: 150px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
