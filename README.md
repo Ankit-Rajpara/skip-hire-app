@@ -17,3 +17,11 @@ This project is a Skip Hire selection application where users can choose differe
 1. Clone this repository:
    ```sh
    git clone https://github.com/Ankit-Rajpara/skip-hire-app.git
+
+2. cd skip-hire-app
+
+3. npm install
+
+4. npm start
+
+5. Open http://localhost:3000/ in your browser to view the application.
